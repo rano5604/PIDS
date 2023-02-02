@@ -83,7 +83,6 @@
    
        <classes> 
           <class name="regression.PidsRegressionSuite" />
-          <class name="regression.PidsRegressionSuite2" />
        </classes>
    </test>
  </suite>

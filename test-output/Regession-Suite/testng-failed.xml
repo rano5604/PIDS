@@ -66,10 +66,11 @@
       <class name="regression.PidsRegressionSuite">
         <methods>
           <include name="OpenBrowser"/>
-          <include name="assignUser"/>
           <include name="searchUser"/>
+          <include name="assignUser"/>
+          <include name="launchPIDS" invocation-numbers="0"/>
           <include name="openRoleManagement"/>
-          <include name="loginPIDS" invocation-numbers="0"/>
+          <include name="loginPIDS"/>
           <include name="seachByNID"/>
           <include name="launchUserAssignment"/>
           <include name="searchPrison"/>
@@ -78,8 +79,8 @@
           <include name="seachByPrisonerID"/>
           <include name="openSearch"/>
           <include name="createPrison"/>
-          <include name="capture"/>
           <include name="matchVerifiedAFIS"/>
+          <include name="capture"/>
           <include name="updateUser"/>
           <include name="matchClearAFIS"/>
           <include name="updatehRole"/>
@@ -88,9 +89,9 @@
           <include name="searchRole"/>
           <include name="updateLookup"/>
           <include name="viewFingerPrints"/>
-          <include name="openUserManagement" invocation-numbers="0"/>
-          <include name="updatePrison"/>
+          <include name="openUserManagement"/>
           <include name="createLookup"/>
+          <include name="updatePrison"/>
           <include name="seachByPrisonerName"/>
           <include name="searchLookup"/>
           <include name="Quit"/>
@@ -98,42 +99,6 @@
           <include name="clearCache"/>
         </methods>
       </class> <!-- regression.PidsRegressionSuite -->
-      <class name="regression.PidsRegressionSuite2">
-        <methods>
-          <include name="updateUser"/>
-          <include name="createPrison"/>
-          <include name="capture"/>
-          <include name="matchVerifiedAFIS"/>
-          <include name="seachByPrisonerID"/>
-          <include name="searchPrison"/>
-          <include name="launchUserAssignment"/>
-          <include name="openSearch"/>
-          <include name="openAFIS"/>
-          <include name="createUser"/>
-          <include name="assignUser"/>
-          <include name="seachByNID"/>
-          <include name="openRoleManagement"/>
-          <include name="launchPIDS" invocation-numbers="0"/>
-          <include name="searchUser"/>
-          <include name="loginPIDS"/>
-          <include name="searchLookup"/>
-          <include name="OpenBrowser"/>
-          <include name="createRole"/>
-          <include name="clearCache"/>
-          <include name="openUserManagement"/>
-          <include name="Quit"/>
-          <include name="seachByPrisonerName"/>
-          <include name="advancedSearch"/>
-          <include name="updatePrison"/>
-          <include name="createLookup"/>
-          <include name="viewFingerPrints"/>
-          <include name="searchRole"/>
-          <include name="updateLookup"/>
-          <include name="matchClearAFIS"/>
-          <include name="updatehRole"/>
-          <include name="seachByCaseNo"/>
-        </methods>
-      </class> <!-- regression.PidsRegressionSuite2 -->
     </classes>
   </test> <!-- PIDSRegression1(failed) -->
 </suite> <!-- Failed suite [Regession-Suite] -->

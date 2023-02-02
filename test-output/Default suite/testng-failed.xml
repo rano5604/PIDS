@@ -34,10 +34,10 @@
   <parameter name="Adjudication_Page_Title" value="Adjudication :: Prison Inmate Admin Portal"/>
   <parameter name="Login_Breadcrumb" value="Dashboard"/>
   <parameter name="Update_Role_DisplayName" value="Test Admin Rano1"/>
-  <parameter name="Create_Lookup_Value" value="Test90002"/>
   <parameter name="Menu_AFIS_Adjudication" value="AFIS Adjudication"/>
-  <parameter name="PrisonerName" value="Mosan"/>
+  <parameter name="Create_Lookup_Value" value="Test90002"/>
   <parameter name="URL" value="http://192.168.1.138:9009/ntmc_admin_portal/login/"/>
+  <parameter name="PrisonerName" value="Mosan"/>
   <parameter name="CaseNo" value="06072022-003"/>
   <parameter name="Status_Pending" value="Pending"/>
   <parameter name="Create_Role_Code" value="Test_Admin_Rano"/>
@@ -62,11 +62,12 @@
       <class name="regression.PidsRegressionSuite">
         <methods>
           <include name="OpenBrowser"/>
-          <include name="searchUser"/>
           <include name="assignUser"/>
+          <include name="searchUser"/>
+          <include name="launchPIDS" invocation-numbers="0"/>
           <include name="openRoleManagement"/>
+          <include name="loginPIDS"/>
           <include name="seachByNID"/>
-          <include name="loginPIDS" invocation-numbers="0"/>
           <include name="launchUserAssignment"/>
           <include name="searchPrison"/>
           <include name="openAFIS"/>
@@ -74,8 +75,8 @@
           <include name="seachByPrisonerID"/>
           <include name="openSearch"/>
           <include name="createPrison"/>
-          <include name="matchVerifiedAFIS"/>
           <include name="capture"/>
+          <include name="matchVerifiedAFIS"/>
           <include name="updateUser"/>
           <include name="matchClearAFIS"/>
           <include name="updatehRole"/>
@@ -85,8 +86,8 @@
           <include name="updateLookup"/>
           <include name="viewFingerPrints"/>
           <include name="openUserManagement"/>
-          <include name="createLookup"/>
           <include name="updatePrison"/>
+          <include name="createLookup"/>
           <include name="seachByPrisonerName"/>
           <include name="searchLookup"/>
           <include name="Quit"/>
